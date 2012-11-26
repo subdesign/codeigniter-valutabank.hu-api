@@ -33,7 +33,25 @@ Load the library
 
     $this->load->library('valutabank');
 
+Use the arfolyamok() method to get the exchange rates.
+
     $result = $this->valutabank->arfolyamok();
+
+Example array result:
+
+    array(5) {  
+        ["last_update"]=>  
+        string(19) "2012-11-26 10:17:16"  
+        ["CHF"]=>  
+        array(3) {  
+            ["veteli"]=>  
+            string(6) "229.01"  
+            ["eladasi"]=>  
+            string(6) "236.98"  
+            ["ikon"]=>  
+            string(54) "http://localhost/valutabank/assets/images/icon-chf.jpg"  
+        }  
+    ...
 
 ## Caching
 
